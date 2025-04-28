@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #e2f9e1, #d6f5d6);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main_div {
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 128, 0, 0.2);
+  width: 350px;
+  position: relative;
+}
+
+.title {
+  text-align: center;
+  font-size: 24px;
+  color: #2e7d32;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+.input_box {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input_box input.box {
+  width: 100%;
+  padding: 12px 15px 12px 40px;
+  border: 1px solid #a5d6a7;
+  border-radius: 10px;
+  background-color: #f9fff9;
+  outline: none;
+}
+
+.input_box input.box:focus {
+  border-color: #66bb6a;
+  background-color: #ffffff;
+}
+
+.icon {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  color: #66bb6a;
+}
+
+.input_box.button input.btn {
+  width: 100%;
+  background: #66bb6a;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.input_box.button input.btn:hover {
+  background: #388e3c;
+}
+
+.sign_up {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.sign_up a {
+  color: #388e3c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.sign_up a:hover {
+  text-decoration: underline;
+}
+
+.message {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  right: 20px;
+  background: #c8e6c9;
+  color: #1b5e20;
+  padding: 10px 15px;
+  border-left: 6px solid #388e3c;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.message i {
+  margin-left: 10px;
+  cursor: pointer;
+}

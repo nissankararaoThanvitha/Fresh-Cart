@@ -1,0 +1,247 @@
+.header {
+    background-color: #e6f5e9; 
+    padding: 20px 50px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+ }
+
+ .header .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+ }
+
+ .header .logo {
+    font-size: 24px;
+    color: #2e7d32;
+    font-weight: bold;
+    text-decoration: none;
+ }
+ 
+ .header .logo i {
+    margin-right: 8px;
+ }
+ 
+ .header .navbar a {
+    margin: 0 12px;
+    font-size: 18px;
+    color: #388e3c; 
+    text-decoration: none;
+    transition: color 0.3s ease;
+ }
+ 
+ .header .navbar a:hover {
+    color: #1b5e20; 
+ }
+ 
+ .header .icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+ }
+ 
+ .header .icons i {
+    font-size: 20px;
+    color: #2e7d32;
+    cursor: pointer;
+ }
+ 
+ .header .icons a {
+    position: relative;
+    color: #2e7d32;
+ }
+ 
+ .header .icons span {
+    position: absolute;
+    top: -8px;
+    right: -12px;
+    background-color: #66bb6a;
+    color: white;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 50%;
+ }
+
+ .header .profile {
+    background-color: #c8e6c9; 
+    padding: 15px;
+    border-radius: 8px;
+    position: absolute;
+    top: 100%;
+    right: 20px;
+    width: 250px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+ }
+ 
+ .header .profile img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+ }
+ 
+ .header .profile p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #1b5e20;
+ }
+ 
+
+ .btn, .delete-btn, .option-btn {
+    display: inline-block;
+    margin: 6px 0;
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    border:none
+ }
+ 
+ .btn {
+    background-color: #66bb6a;
+    color: white;
+ }
+ 
+ .btn:hover {
+    background-color: #4caf50;
+ }
+ 
+ .delete-btn {
+    background-color: #ef5350;
+    color: white;
+ }
+ 
+ .delete-btn:hover {
+    background-color: #d32f2f;
+ }
+ 
+ .option-btn {
+    background-color: #66bb6a;
+    color: white;
+    margin: 4px;
+ }
+ 
+ .option-btn:hover {
+    background-color: #4caf50;
+ }
+
+ .header .profile.active {
+    display: flex;
+ }
+.footer {
+    background-color: #2e7d32; 
+    color: #ffffff;
+    padding: 50px 20px 20px;
+    font-family: 'Segoe UI', sans-serif;
+    margin-top:50px;
+ }
+ 
+ .footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto 30px;
+ }
+ 
+ .fbox h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #c8e6c9;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+ }
+ 
+ .fbox a, .fbox p {
+    display: block;
+    font-size: 14px;
+    color: #f1f8e9;
+    margin: 8px 0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+ }
+ 
+ .fbox a:hover {
+    color: #a5d6a7;
+    transform: translateX(5px);
+ }
+ 
+ .fbox i {
+    margin-right: 8px;
+    color: #a5d6a7;
+ }
+ 
+ .footer .credit {
+    text-align: center;
+    font-size: 14px;
+    color: #f1f8e9;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 15px;
+    margin-top: 10px;
+ }
+ 
+ .footer .credit span {
+    color: #ffffff;
+    font-weight: bold;
+ }
+
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.box {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1.5px solid #c5e1a5;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.box p {
+    font-size: 14px;
+    margin: 8px 0;
+    color: #333;
+}
+
+.box p span {
+    font-weight: bold;
+    color: #555;
+}
+
+.box p span[style] {
+    font-weight: bold;
+}
+
+.empty {
+    font-size: 16px;
+    color: #777;
+    text-align: center;
+    margin-top: 50px;
+    font-style: italic;
+}
+
+.box p span[style="color:red"] {
+    color: red;
+}
+
+.box p span[style="color:green"] {
+    color: green;
+}
